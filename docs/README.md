@@ -108,3 +108,13 @@ Returns perimiter of a square with side `a`
 > perimiter(2)
 8
 ```
+
+# Changelog
+
+- `76583ad` Add Markdown docs
+- `c86f394` Add function docs
+- `732b7d0` Fix rectangle perimeter formula
+- `e1309df` Add triangle.py
+- `65d6a53` Add rectangle.py
+- `d078c8d` L-03: Docs added
+- `8ba9aeb` L-03: Circle and square added
