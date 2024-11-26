@@ -1,3 +1,5 @@
+import math
+import numbers
 
 def area(a):
     '''
@@ -7,6 +9,16 @@ def area(a):
     > area(3)
     9
     '''
+
+    if not isinstance(a, numbers.Real):
+        raise TypeError("Square side must be a real number")
+
+    if not math.isfinite(a):
+        raise ValueError("Square side must be a finite number")
+
+    if a < 0:
+        raise ValueError("Square side must be non-negative")
+
     return a * a
 
 
@@ -18,4 +30,14 @@ def perimeter(a):
     > perimiter(2)
     8
     '''
+
+    if not isinstance(a, numbers.Real):
+        raise TypeError("Square side must be a real number")
+
+    if not math.isfinite(a):
+        raise ValueError("Square side must be a finite number")
+
+    if a < 0:
+        raise ValueError("Square side must be non-negative")
+
     return 4 * a
