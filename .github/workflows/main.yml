@@ -7,6 +7,8 @@ on:
   pull_request:
     branches: [ "new_features_466821_tests" ]
 
+  workflow_dispatch:
+
 jobs:
   run_tests:
     runs-on: ${{ matrix.os }}
