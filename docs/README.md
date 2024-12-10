@@ -111,6 +111,8 @@ Returns perimiter of a square with side `a`
 
 # Changelog
 
+- `ba9f2fb` Add tests
+- `89d61e6` Add function argument checks
 - `76583ad` Add Markdown docs
 - `c86f394` Add function docs
 - `732b7d0` Fix rectangle perimeter formula
