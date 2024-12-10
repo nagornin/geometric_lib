@@ -12,6 +12,10 @@ on:
 jobs:
   run_tests:
     runs-on: ${{ matrix.os }}
+    
+    defaults:
+      run:
+        shell: bash
 
     strategy:
       matrix:
