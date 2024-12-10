@@ -56,3 +56,6 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_args_missing(self):
         self.assertRaises(TypeError, triangle.perimeter)
+
+    def test_perimeter_invalid_triangle_ignored(self):
+        self.assertEqual(triangle.perimeter(1, 3, 1), 5)
