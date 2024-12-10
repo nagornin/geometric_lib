@@ -1,0 +1,30 @@
+name: Run tests
+
+on:
+  push:
+    branches: [ "new_features_466821_tests" ]
+
+  pull_request:
+    branches: [ "new_features_466821_tests" ]
+
+  workflow_dispatch:
+
+jobs:
+  run_tests:
+    runs-on: ${{ matrix.os }}
+    
+    defaults:
+      run:
+        shell: bash
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: new_features_466821_tests
+        
+      - name: Run Python tests
+        run: python -m unittest tests/*.py
