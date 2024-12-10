@@ -19,6 +19,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: new_features_466821_tests
         
       - name: Run Python tests
         run: python -m unittest tests/*.py
