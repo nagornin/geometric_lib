@@ -111,6 +111,7 @@ Returns perimiter of a square with side `a`
 
 # Changelog
 
+- `623a170` Add GitHub Actions CI/CD workflow for automated testing
 - `ba9f2fb` Add tests
 - `89d61e6` Add function argument checks
 - `76583ad` Add Markdown docs
